@@ -47,6 +47,7 @@ exports.config = {
         maxInstances: 5,
         //
         browserName: 'chrome',
+        args: ['--headless', 'disable-gpu']
     }],
     //
     // ===================
