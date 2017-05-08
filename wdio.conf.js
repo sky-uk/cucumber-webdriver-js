@@ -10,7 +10,7 @@ exports.config = {
     // `wdio` will be called from there.
     //
     specs: [
-        './src/features/**/*.feature',
+        './src/features/shop/*.feature',
     ],
     // Patterns to exclude.
     exclude: [
@@ -46,7 +46,7 @@ exports.config = {
         // make sure that not more than 5 instance gets started at a time.
         maxInstances: 5,
         //
-        browserName: 'chrome',
+        browserName: 'phantomjs',
     }],
     //
     // ===================
@@ -127,6 +127,7 @@ exports.config = {
             './src/steps/given.js',
             './src/steps/then.js',
             './src/steps/when.js',
+            './src/steps/login.js',
         ], // <string[]> (file/dir) require files before executing features
         backtrace: false, // <boolean> show full backtrace for errors
         compiler: [
